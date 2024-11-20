@@ -12,7 +12,7 @@ const PORT = 5550;
 
 app.use(express.json());
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: "https://test.begelled.com",
   methods: ["GET", "POST"],
   credentials: true,
 }));
@@ -20,7 +20,7 @@ app.use(cors({
 const server = http.createServer(app);
 const io = new Server(server, { 
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://test.begelled.com",
     methods: ["GET", "POST"],
     credentials: true,
   }
